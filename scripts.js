@@ -33,7 +33,7 @@ function loadFiles() {
   // Load PDFs from uploads folder (Requires a local server)
   const manualFiles = [
     { name: "G & M, Lab", url: "uploads/G & M, Lab.pdf" },
-    { name: "Software Testing Lab manual", url: "uploads/Software Testing Lab manual.pdf" }
+    { name: "Software Testing Lab manual", url: "uploads/Software Testing Lab manual.pdf" },
     { name: "Dot Net Lab", url: "uploads/Dot Net Lab.pdf" }
   ];
 
