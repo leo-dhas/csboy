@@ -1,8 +1,6 @@
 # csboy
-# 📂 csboy - PDF Upload & View Web App
-
-csboy is a simple, **mobile-friendly** web app built with **Flask**.  
-Users can **upload PDFs**, view them online, and download them.  
+# 📂 csboy - PDF View Website 
+Users can view them online, and download them.  
 
 ## 🚀 Features
 ✅ View previously uploaded PDFs on the home page  
