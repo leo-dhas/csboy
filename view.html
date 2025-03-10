@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>csboy - View PDF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="pdf-title">Viewing: </h1>
+    <iframe id="pdf-viewer" src="" width="100%" height="600px"></iframe>
+
+    <div class="actions">
+      <a id="download-link" download class="btn">Download PDF</a>
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const fileUrl = urlParams.get("file");
+    const fileName = urlParams.get("name");
+
+    if (fileUrl && fileName) {
+      document.getElementById("pdf-viewer").src = fileUrl;
+      document.getElementById("pdf-title").textContent = "Viewing: " + fileName;
+      document.getElementById("download-link").href = fileUrl;
+    } else {
+      document.body.innerHTML = "<h2>Invalid file.</h2>";
+    }
+  </script>
+
+</body>
+</html>
