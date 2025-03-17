@@ -34,7 +34,11 @@ function loadFiles() {
   const manualFiles = [
     { name: "G & M, Lab", url: "uploads/G & M, Lab.pdf" },
     { name: "Software Testing Lab manual", url: "uploads/Software Testing Lab manual.pdf" },
-    { name: "Dot Net Lab", url: "uploads/Dot Net Lab.pdf" }
+    { name: "Dot Net Lab", url: "uploads/Dot Net Lab.pdf" },
+    { name: "Employee database", url: "uploads/Employee database.pdf" },
+    { name: "Ware House", url: "uploads/ware House.pdf" },
+    { name: "p & p database", url: "uploads/p & p database.pdf" }
+    
   ];
 
   files = [...manualFiles, ...files]; // Merge manually uploaded files
